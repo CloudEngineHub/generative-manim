@@ -42,6 +42,12 @@ class TestModelsEndpoint:
         openai_entry = next(e for e in data["engines"] if e["engine"] == "openai")
         assert openai_entry["configured"] is True
 
+    def test_openai_models_include_the_current_tiered_catalog(self, client):
+        data = client.get("/v1/models").get_json()
+        openai = next(e for e in data["engines"] if e["engine"] == "openai")
+        model_ids = [model["id"] for model in openai["models"]]
+        assert {"gpt-6-astra", "gpt-5.6-sol", "gpt-5.6-terra", "gpt-5.6-luna"} <= set(model_ids)
+
     def test_anthropic_default_is_claude_sonnet_5(self, client):
         data = client.get("/v1/models").get_json()
         anthropic = next(e for e in data["engines"] if e["engine"] == "anthropic")

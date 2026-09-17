@@ -11,6 +11,7 @@ _ENGINES = {
         "env_var": "OPENAI_API_KEY",
         "default": "gpt-5.6-terra",
         "models": [
+            {"id": "gpt-6-astra", "description": "GPT-6 Astra: most capable model for complex reasoning and coding"},
             {"id": "gpt-5.6-sol", "description": "GPT-5.6 Sol: frontier model for complex professional work"},
             {"id": "gpt-5.6-terra", "description": "GPT-5.6 Terra: balances intelligence and cost"},
             {"id": "gpt-5.6-luna", "description": "GPT-5.6 Luna: fastest, most cost-efficient tier"},
