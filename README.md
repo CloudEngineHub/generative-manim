@@ -74,6 +74,7 @@ See what's new in each release on the [Animo changelog](https://animo.video/chan
 
 | Name                          | Description                                                               | Engine                     | Phase |
 | ----------------------------- | ------------------------------------------------------------------------- | -------------------------- | ----- |
+| GM GPT-6 Astra                | Most capable model for complex reasoning and coding                        | gpt-6-astra                | ✅    |
 | GM GPT-5.6 Sol                | OpenAI's frontier model for complex professional and coding work          | gpt-5.6-sol                | ✅    |
 | GM GPT-5.6 Terra              | Default OpenAI model, balances intelligence and cost                     | gpt-5.6-terra              | ✅    |
 | GM GPT-5.6 Luna               | Fastest, most cost-efficient OpenAI tier                                  | gpt-5.6-luna                | ✅    |

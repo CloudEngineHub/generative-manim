@@ -59,6 +59,7 @@ Es begann als Prototyp einer Web-App, die [GPT-4](https://openai.com/research/gp
 
 | Name                          | Beschreibung                                                                     | Engine                     | Phase |
 | ----------------------------- | -------------------------------------------------------------------------------- | -------------------------- | ----- |
+| GM GPT-6 Astra                | Leistungsfähigstes Modell für komplexes Schlussfolgern und Programmieren         | gpt-6-astra                | ✅    |
 | GM GPT-5.6 Sol                 | OpenAIs Frontier-Modell für komplexe professionelle und Coding-Arbeit            | gpt-5.6-sol                 | ✅    |
 | GM GPT-5.6 Terra               | Standardmodell von OpenAI, Balance aus Intelligenz und Kosten                    | gpt-5.6-terra               | ✅    |
 | GM GPT-5.6 Luna                | Schnellste, kosteneffizienteste OpenAI-Stufe                                     | gpt-5.6-luna                | ✅    |

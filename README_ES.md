@@ -59,6 +59,7 @@ Los **modelos** son el núcleo de Generative Manim. Un modelo es una forma de co
 
 | Nombre                        | Descripción                                                                       | Motor                      | Fase |
 | ----------------------------- | --------------------------------------------------------------------------------- | -------------------------- | ----- |
+| GM GPT-6 Astra                | Modelo más capaz para razonamiento y programación complejos                       | gpt-6-astra                | ✅    |
 | GM GPT-5.6 Sol                 | Modelo de frontera de OpenAI para trabajo profesional y de código complejo        | gpt-5.6-sol                 | ✅    |
 | GM GPT-5.6 Terra               | Modelo predeterminado de OpenAI, equilibra inteligencia y costo                  | gpt-5.6-terra               | ✅    |
 | GM GPT-5.6 Luna                | Nivel de OpenAI más rápido y económico                                          | gpt-5.6-luna                | ✅    |

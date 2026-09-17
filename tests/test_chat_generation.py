@@ -149,6 +149,17 @@ class TestChatGenerationEngineValidation:
 
 
 class TestChatGenerationModelDefaults:
+    def test_gpt_6_astra_passes_validation(self, client, monkeypatch):
+        monkeypatch.setenv("OPENAI_API_KEY", "test-key")
+        with mock.patch("openai.OpenAI") as mock_openai:
+            mock_openai.return_value.chat.completions.create.return_value = iter([])
+            resp = client.post("/v1/chat/generation", json={
+                "prompt": "draw a circle",
+                "engine": "openai",
+                "model": "gpt-6-astra",
+            })
+        assert resp.status_code == 200
+
     def test_openai_default_model_is_gpt_5_6_terra(self, client, monkeypatch):
         monkeypatch.setenv("OPENAI_API_KEY", "test-key")
         captured = {}
